@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "Force Old Reddit",
+    "version": "1.0",
+    
+    "description": "redirect www.reddit.com/* to old.reddit.com/*",
+    
+    "icons": {
+        "48": "icons/icon.png"
+    },
+    "content_scripts": [
+    {
+    "matches": ["*://www.reddit.com/*"],
+    "js": ["oldreddit.js"]
+    }
+    ]
+}
